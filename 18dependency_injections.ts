@@ -1,36 +1,32 @@
-class StoreA {
-    private name:string = 'Store A'
-    private profit:number = 2000
+class StoreIkhwan {
+    private name:string = 'Store Ikhwan'
+    private profit:number = 30000
 
-    getName():string {
+    getName():string{
         return this.name
     }
-
-    getProfit():number {
+    getProfit():number{
         return this.profit
     }
-
 }
 
-class DressMuslim {
-    private store:StoreA
+class DressKaftan {
+    private store:StoreIkhwan
     private name:string
     private price:number
 
     constructor(name:string, price:number){
         this.name = name
         this.price = price
-
-        this.store = new StoreA()
+        
+        this.store = new StoreIkhwan()
     }
 
-    priceSell():void {
-        console.log(`product ${this.name} dijual dengan harga ${this.store.getProfit() + this.price}`)
+    sell():void{
+        console.log(`harga jual ${this.name} adalah ${this.price + this.store.getProfit()}`)
     }
-
 }
 
-const bajukurung = new DressMuslim('Baju Kurung', 25000)
-bajukurung.priceSell()
+const bajukurung = new DressKaftan('Baju Kurung', 20000)
 
-
+bajukurung.sell()
