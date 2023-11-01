@@ -29,4 +29,4 @@ class DressKaftan {
 
 const bajukurung = new DressKaftan('Baju Kurung', 20000) //contoh nya bisa running
 
-bajukurung.sell()
+bajukurung.sell() //testing dengan nama baju kurung
