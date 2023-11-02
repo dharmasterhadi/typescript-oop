@@ -32,3 +32,5 @@ const bajukurung = new DressKaftan('Baju Kurung', 20000) //contoh nya bisa runni
 bajukurung.sell() //testing dengan nama baju kurung
 
 //tambahan komentar untuk membuktikan commit
+
+//ini masih contoh
